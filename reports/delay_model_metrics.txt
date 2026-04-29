@@ -1,0 +1,30 @@
+Delay Risk Model Metrics
+========================
+
+Train class distribution:
+is_delayed
+0    286
+1     64
+Name: count, dtype: int64
+
+Test class distribution:
+is_delayed
+0    122
+1     28
+Name: count, dtype: int64
+
+Accuracy: 0.5733
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.90      0.53      0.67       122
+           1       0.27      0.75      0.40        28
+
+    accuracy                           0.57       150
+   macro avg       0.59      0.64      0.53       150
+weighted avg       0.78      0.57      0.62       150
+
+Confusion Matrix:
+[[65 57]
+ [ 7 21]]
