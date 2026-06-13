@@ -71,10 +71,11 @@ Computes verified derived fields such as delay hours, on-time indicator, cost pe
 Handles model training, delay-risk scoring of the enriched shipments, KPI generation, and export for Power BI consumption.
 
 For further details, see:
-- [Pipeline design](pipeline_design.md)
-- [Dataset schema](data_schema.md)
-- [API mapping](api_mapping.md)
-- [Base dataset design](base_dataset_design.md)
+- [Pipeline design](docs/pipeline_design.md)
+- [Dataset schema](docs/data_schema.md)
+- [API mapping](docs/api_mapping.md)
+- [Base dataset design](docs/base_dataset_design.md)
+- [Documentation index](docs/README.md)
 
 ## Model Evaluation
 
@@ -102,26 +103,26 @@ For further details, see:
 
 ## Power BI Reporting
 
-The dashboard (`AI BASED LOGISTICS MANAGEMENT SYSTEM.pbix`) is intended to visualise operational KPIs and shipment-level analysis. The `.pbix` file can be opened locally in Power BI Desktop to explore the generated reports.
+The dashboard (`dashboards/ai_logistics_dashboard.pbix`) is intended to visualise operational KPIs and shipment-level analysis. The `.pbix` file can be opened locally in Power BI Desktop to explore the generated reports.
 
 ## Repository Structure
 
 ```text
 .
+├── dashboards/
+│   └── ai_logistics_dashboard.pbix
+├── docs/
+│   ├── README.md
+│   ├── api_mapping.md
+│   ├── base_dataset_design.md
+│   ├── data_schema.md
+│   ├── pipeline_design.md
+│   └── project_foundation.md
 ├── models/
 ├── reports/
+├── scripts/
+│   └── check_model.py
 ├── src/
-│   ├── features/
-│   ├── ingestion/
-│   ├── models/
-│   ├── preprocessing/
-│   └── reporting/
-├── AI BASED LOGISTICS MANAGEMENT SYSTEM.pbix
-├── api_mapping.md
-├── base_dataset_design.md
-├── data_schema.md
-├── pipeline_design.md
-├── project_foundation.md
 ├── requirements.txt
 └── LICENSE
 ```
